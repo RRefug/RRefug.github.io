@@ -1,0 +1,51 @@
+
+/* Title*/
+h1 {
+    color: rgb(14, 14, 149);
+}
+
+#pic{
+    width: 35%; 
+}
+
+#info{
+    line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(21,21,161);
+}
+
+
+a:hover{
+    color: brown;
+    
+}
+
+/* Set page background color */
+body{
+    background-color: rgb(236, 226, 214);
+    padding-left: 120px; /*Increase padding so that the sidebar does not mess with the text*/
+    padding-right: 8px;
+}
+
+h2{
+    color:rgb(14, 14, 149);
+    border-bottom: 1px solid;
+    margin-top: 1.2em; /*Adding margin for the top of the header 2 */
+}
+
+#sidebar{
+    position: fixed; /*When scrolling up and down, the sidebar wont be moving.Also, by default, it is put on the top left corner.*/
+    top: 0;
+    left: 0;
+
+    width: 100px;
+    height: 100%;/*Whole page height*/
+    background-color: rgb(211,211,134);
+    padding-top: 20px;
+    padding-left: 15px;
+    line-height: 1.85em;
+    font-size: 1.1em;
+}
