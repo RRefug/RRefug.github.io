@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtistForumPage</title>
+</head>
+<body>
+    
+    <div id = "SongContainer" > 
+        <h1 style = "color: white">Artist Forum Page</h1>
+        <table>
+            <tr>
+                <td style = "width: 300px; height: 300px;" rowspan ="2">
+                    <img src="https://static.wikia.nocookie.net/agk/images/1/18/21499dba0eec71730fdaa0534a82e163.jpg/revision/latest?cb=20210511185219" style="max-width:100%; max-height:100%;">
+                </td>
+                <td id = "albumCovers">
+                    <div style="display: flex;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/b/bf/UltimateRick.jpg" style="width: 100px; height: 100px;">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71-jYo99SML._AC_UL600_SR600,600_.jpg" style="width: 100px; height: 100px;">
+                        <img src="https://cdn-s3.allmusic.com/release-covers/400/0001/255/0001255188.jpg" style="width: 100px; height: 100px;">
+                    </div>
+                    
+                    
+                </td>
+            </tr>
+            <tr>
+                <td id = "songLyrics" style = "width: 200px; height: 10px;">
+                Biography: <br>
+                <br>
+                Rick Astley is 72 years old <br>
+                Has 2 kids <br>
+                Been making music for 21 years <br>
+                <br>
+                He will never: <br>
+                    - Give you up <br>
+                    - Let you down <br>
+                    - Run around <br>
+                    and so much more <br>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <br>
+
+    <div id = "CMB">
+        <h2 style = "color: white"> Community MessageBoard </h2>
+    </div>
+
+    <div id = "Add">
+        <h2 style = "color: white"> Add Post</h2>
+    </div>
+
+    <br>
+
+
+    <div class = "scrollContainer">
+        <div class = "postContainer" > 
+            <div class = "ProfilePicContainer" >
+                <img class = "UserPic" src = "SpotifyDefaultProfilePic.jfif"/> 
+            </div>
+    
+            <h3 id = "post"> Post Title </h3>
+    
+            <div id = "postContentContainer" > <p>Post Content</p></div>
+    
+            <div id = "postLike" > <p style="position: center;">Like</p> </div>
+    
+            <div id = "postReply" > <p> Reply</p> </div>
+        </div>
+    
+        <div class = "postContainer" > 
+            <div class = "ProfilePicContainer" >
+                <img class = "UserPic" src = "SpotifyDefaultProfilePic.jfif"/> 
+            </div>
+    
+            <h3 id = "post"> Post Title </h3>
+    
+            <div id = "postContentContainer" > <p>Post Content</p></div>
+    
+            <div id = "postLike" > <p style="position: center;">Like</p> </div>
+    
+            <div id = "postReply" > <p> Reply</p> </div>
+        </div>
+        </div>
+    
+    
+        
+    
+    
+    </body>
+    
+    <style type = "text/css">
+    
+        .postContainer{
+            width: 500px;
+            height: 150px;
+    
+            margin-top: 100px;
+            border: 2px solid;
+            border-color: black;
+            background-image: linear-gradient(white,grey);
+            position: relative;  /*Allows the profile image to stay on top*/
+        }
+    
+        .ProfilePicContainer{
+            width: 80px;
+            height: 80px;
+    
+            background-color: red;
+            position: absolute; /*Does not allow the profile pic to go further than the post container. Allows it to stay on top of it. */
+    
+            right: 20px; /*Not the amount of pixels we going to the right, where we want it. */
+            top: 10px;
+        }
+    
+        .UserPic{
+            object-fit: cover;
+            object-position: center center;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; /*This allows us to make a round icon*/
+        }
+    
+        #post{
+            height: 25px;
+            width: 200px;
+    
+            background-color: orange;
+            position: absolute;
+            text-align: center;
+    
+            left: 10px;
+        }
+    
+    
+        #postContentContainer{
+            height: 70px;
+            width: 300px;
+    
+            text-align: center;
+            background-color: pink;
+            position: absolute;
+    
+            left: 10px;
+            bottom: 30px;;
+        }
+    
+        #postLike{
+            width: 70px;
+            height: 30px;
+    
+            text-align: center;
+            padding-bottom: 10px;
+            background-color: lightblue;
+            position: absolute;
+    
+            right: 100px;
+            bottom: 10px;
+            border-radius: 7%;
+        }
+    
+        #postReply{
+            width: 70px;
+            height: 30px;
+    
+            text-align: center;
+            padding-bottom: 10px;
+            background-color: yellow;
+            position: absolute;
+    
+            right: 10px;
+            bottom: 10px;
+            border-radius: 7%;
+        }
+    
+        #CMB{
+            width: 300px;
+            height: 50px;
+            
+            border-radius: 25px;
+            border: 1px solid;
+            border-color: white;
+            padding-bottom: 15px;
+            
+            background-color: green;
+            position: fixed;
+            left: 10px;
+        }
+    
+        #songLyrics{
+            width: 100px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: gray;
+        }
+    
+        #songTitle{
+            width: 100px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: gray;
+        }
+    
+    
+        #Add{
+            height: 50px;
+            width: 300px;
+    
+            border-radius: 25px;
+            border: 1px solid;
+            border-color: white;
+            padding-bottom: 15px;
+    
+            background-color: black;
+            position: fixed;
+            left: 350px;
+            
+        }
+    
+        h2{
+            text-align: center;
+        }
+        
+        /* I have to apply the gradient to the entire document, so i do html instead of body*/
+        html{
+            height: 100%;
+            background-image: linear-gradient(#07301e,black);
+        }
+    
+        .scrollContainer{
+            border: none;
+            width: 900px;
+            height: 350px;
+            overflow-y: scroll;
+            background-color: black;
+            margin-top: 120px;
+            position: relative;
+        }
+    
+    </style>
+    
+    
+    
+    </html>
